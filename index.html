@@ -3,58 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <title>edfolks</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="static/favicon.ico" type="image/x-icon">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<meta name="mobile-web-app-capable" content="yes" />
+<meta
+  name="apple-mobile-web-app-status-bar-style"
+  content="black-translucent"
+/>
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
 <style>
   body {
-    font-family: Roboto;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-  }
-  .content {
-    display:flex;
-     align-items: start;
+    padding: 50px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
   }
   p{
-    width: 500px;
+    max-width: 570px;
     line-height: 190%;
-    margin-left: 30px;
-    border-left: 1px solid #ccc;
-    padding-left: 30px;
     color: #333;
   } 
   </style>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NT5DC1XG0H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NT5DC1XG0H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-NT5DC1XG0H');
+    gtag('config', 'G-NT5DC1XG0H');
+  </script>
+</head>
 </script>
 <body>
 
 <section class="content">
-  <header><Img src="static/logo/logo-512.png" height="150"/></header>
+  <img src="logo.svg?cache=2" height="180"/>
   <p>
-    Empowering education using technology,
-    <br/>
-    EdFolks produces apps to assist everyone from individual teachers to large institutes in scaling their educational programs.
-    <br/>
-    <a href="https://www.linkedin.com/company/edfolks" alt="Linkedin">
+    Our aim is to empower education by using technology. Innovation is underway!
+  </p>
+   <a href="https://www.linkedin.com/company/dukanum" alt="Linkedin">
     <Img src="static/icons/tp-linkedin.svg" height="32" style="margin-top: 10px;"/>
     </a>
-  </p>
 </section>
-<footer style="position:fixed; right:30px; bottom:30px; color: #999; color: #999; font-size: 90%;">
-  Copyright &copy; edfolks. All rights reserved.
+<footer style="position:fixed; right:10px; bottom:10px; color: #999; color: #999; font-size: 90%;">
+  Copyright&copy;edfolks.com. All rights reserved.
 </footer>
 </body>
 </html>
